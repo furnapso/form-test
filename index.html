@@ -7,8 +7,28 @@
     <title>Form Validation Test</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <link rel='stylesheet' href='styles.css'>
 </head>
 <body>
+
+    <form>
+        <label for='email'>Email</label>
+        <input id='email' type="email" required>
+
+        <label for='country'>Country</label>
+        <input id='country' type='text' required>
+
+        <label for='zipCode'>Zip Code</label>
+        <input id='zipCode' type='text' max='4' min='1' required>
+
+        <label for='password'>Password</label>
+        <input id='password' type="password" required>
+
+        <label for='passwordConfirm'>Confirm Password</label>
+        <input id='passwordConfirm' type='password' required>
+
+        <button>Submit</button>
+    </form>
     
     <script src='script.js'></script>
 </body>
