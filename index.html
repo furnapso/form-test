@@ -11,6 +11,8 @@
 </head>
 <body>
 
+    <h1>Form Validation Test</h1>
+
     <form>
         <label for='email'>Email</label>
         <input id='email' type="email" required>
@@ -19,7 +21,7 @@
         <input id='country' type='text' required>
 
         <label for='zipCode'>Zip Code</label>
-        <input id='zipCode' type='text' max='4' min='1' required>
+        <input id='zipCode' type='text' max='4' min='1' required pattern="[0-9]{4}">
 
         <label for='password'>Password</label>
         <input id='password' type="password" required>
